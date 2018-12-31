@@ -108,7 +108,7 @@
 					class="solve-infos"
 				>
 					<span class="solve-info subheading">
-						{{moveCount}} turns
+						{{moveCount()}} turns
 					</span>
 					<span class="solve-info subheading">
 						{{speed}} tps
