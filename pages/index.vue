@@ -102,13 +102,16 @@
 					>
 						Reset
 					</v-btn>
+					<span class="solve-info subheading">
+						{{this.ActualMoveCount}} turns
+					</span>
 				</div>
 				<div
 					v-if="phase === 'scramble' && !isFirstSolve"
 					class="solve-infos"
 				>
 					<span class="solve-info subheading">
-						{{moveCount}} turns
+						{{this.ActualMoveCount}} turns
 					</span>
 					<span class="solve-info subheading">
 						{{speed}} tps
@@ -243,6 +246,7 @@ export default {
 			isGiikerConnected: null,
 			startTime: null,
 			time: 0,
+			ActualMoveCount: 0,
 			phase: 'connect',
 			isConnecting: false,
 			isDescriptionShown: true,
@@ -335,6 +339,7 @@ export default {
 		this.isDialogOpen = !navigator.bluetooth && typeof BluetoothDevice === 'undefined';
 		this.platform = navigator.platform;
 		this.analyzer = null;
+		this.ActualMoveCount = 0;
 	},
 	destroyed() {
 		if (this.interval) {
@@ -414,10 +419,12 @@ export default {
 				this.isDescriptionShown = false;
 				this.interval = setInterval(this.onTick, 1000 / 30);
 				this.scrollToStage();
+				this.ActualMoveCount = 0;
 				// fall through
 			}
 
 			if (this.phase === 'solve') {
+				this.ActualMoveCount = this.ActualMoveCount + 1;
 				this.time = now.getTime() - this.startTime.getTime();
 				this.analyzer.pushMoves([{time: this.time, ...move}]);
 
