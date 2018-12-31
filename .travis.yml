@@ -11,8 +11,6 @@ branches:
   except:
     - "/^v\\d+\\.\\d+\\.\\d+$/"
     - gh-pages
-notifications:
-  // webhooks: http://webhook.hakatashi.com/travis
 deploy:
   provider: firebase
   skip_cleanup: true
