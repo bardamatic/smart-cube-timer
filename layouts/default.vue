@@ -51,32 +51,6 @@
 		<v-content>
 			<nuxt/>
 		</v-content>
-		<v-footer
-			:height="40"
-			:style="{lineHeight: '1.2em'}"
-			app
-		>
-			<v-flex
-				text-xs-center
-				xs12
-			>
-				This timer is under development - <a
-					href="https://github.com/hakatashi/smart-cube-timer"
-					target="_blank"
-				>
-					GitHub
-				</a> - <a
-					href="https://twitter.com/hakatashi"
-					target="_blank"
-				>
-					Twitter
-				</a>
-				<br>
-				<strong>
-					NEWS: Details of solve history are available!
-				</strong>
-			</v-flex>
-		</v-footer>
 		<v-bottom-nav
 			:height="50"
 			:value="'solves'"
