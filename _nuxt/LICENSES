@@ -6,8 +6,8 @@
  */
 
 /*!
- * Vue.js v2.5.21
- * (c) 2014-2018 Evan You
+ * Vue.js v2.6.8
+ * (c) 2014-2019 Evan You
  * Released under the MIT License.
  */
 
@@ -229,13 +229,101 @@
 
 /*! ./VBtnToggle */
 
+/*!***********************************************!*\
+  !*** ./src/components/VCalendar/VCalendar.ts ***!
+  \***********************************************/
+
+/*! ./mixins/calendar-base */
+
+/*! ./util/props */
+
+/*! ./util/timestamp */
+
+/*! ./VCalendarMonthly */
+
+/*! ./VCalendarDaily */
+
+/*! ./VCalendarWeekly */
+
+/*!****************************************************!*\
+  !*** ./src/components/VCalendar/VCalendarDaily.ts ***!
+  \****************************************************/
+
+/*! ../../stylus/components/_calendar-daily.styl */
+
+/*! ./mixins/calendar-with-intervals */
+
+/*!******************************************************!*\
+  !*** ./src/components/VCalendar/VCalendarMonthly.ts ***!
+  \******************************************************/
+
+/*! ../../stylus/components/_calendar-weekly.styl */
+
+/*!*****************************************************!*\
+  !*** ./src/components/VCalendar/VCalendarWeekly.ts ***!
+  \*****************************************************/
+
+/*!*******************************************!*\
+  !*** ./src/components/VCalendar/index.ts ***!
+  \*******************************************/
+
+/*! exports provided: VCalendar, VCalendarDaily, VCalendarWeekly, VCalendarMonthly, default */
+
+/*! ./VCalendar */
+
+/*!**********************************************************!*\
+  !*** ./src/components/VCalendar/mixins/calendar-base.ts ***!
+  \**********************************************************/
+
+/*! ../../../util/mixins */
+
+/*! ../../../mixins/themeable */
+
+/*! ../../../mixins/colorable */
+
+/*! ./times */
+
+/*! ./mouse */
+
+/*! ../util/props */
+
+/*! ../util/timestamp */
+
+/*!********************************************************************!*\
+  !*** ./src/components/VCalendar/mixins/calendar-with-intervals.ts ***!
+  \********************************************************************/
+
+/*! ./calendar-base */
+
+/*!**************************************************!*\
+  !*** ./src/components/VCalendar/mixins/mouse.ts ***!
+  \**************************************************/
+
+/*! vue */
+
+/*!**************************************************!*\
+  !*** ./src/components/VCalendar/mixins/times.ts ***!
+  \**************************************************/
+
+/*!************************************************!*\
+  !*** ./src/components/VCalendar/util/props.ts ***!
+  \************************************************/
+
+/*! ./timestamp */
+
+/*!****************************************************!*\
+  !*** ./src/components/VCalendar/util/timestamp.ts ***!
+  \****************************************************/
+
+/*! exports provided: PARSE_REGEX, PARSE_TIME, DAYS_IN_MONTH, DAYS_IN_MONTH_LEAP, DAYS_IN_MONTH_MIN, DAYS_IN_MONTH_MAX, MONTH_MAX, MONTH_MIN, DAY_MIN, DAYS_IN_WEEK, MINUTES_IN_HOUR, HOURS_IN_DAY, FIRST_HOUR, getStartOfWeek, getEndOfWeek, getStartOfMonth, getEndOfMonth, parseTime, validateTimestamp, parseTimestamp, parseDate, getDayIdentifier, getTimeIdentifier, updateRelative, updateMinutes, updateWeekday, updateFormatted, getWeekday, isLeapYear, daysInMonth, copyTimestamp, padNumber, getDate, getTime, nextMinutes, nextDay, prevDay, relativeDays, findWeekday, getWeekdaySkips, createDayList, createIntervalList, createNativeLocaleFormatter */
+
 /*!***************************************!*\
   !*** ./src/components/VCard/VCard.ts ***!
   \***************************************/
 
 /*! ../../stylus/components/_cards.styl */
 
-/*! ../../mixins/measurable */
+/*! ../VSheet */
 
 /*!********************************************!*\
   !*** ./src/components/VCard/VCardMedia.ts ***!
@@ -246,8 +334,6 @@
 /*!********************************************!*\
   !*** ./src/components/VCard/VCardTitle.ts ***!
   \********************************************/
-
-/*! vue */
 
 /*!***************************************!*\
   !*** ./src/components/VCard/index.ts ***!
@@ -334,13 +420,13 @@
 /*! ./VCombobox */
 
 /*!*********************************************!*\
-  !*** ./src/components/VCounter/VCounter.js ***!
+  !*** ./src/components/VCounter/VCounter.ts ***!
   \*********************************************/
 
 /*! ../../stylus/components/_counters.styl */
 
 /*!******************************************!*\
-  !*** ./src/components/VCounter/index.js ***!
+  !*** ./src/components/VCounter/index.ts ***!
   \******************************************/
 
 /*! exports provided: VCounter, default */
@@ -405,6 +491,8 @@
 
 /*! ../../transitions/expand-transition */
 
+/*! ../../../util/helpers */
+
 /*!**************************************************!*\
   !*** ./src/components/VDataTable/mixins/foot.js ***!
   \**************************************************/
@@ -424,7 +512,7 @@
   \******************************************************/
 
 /*!***************************************************!*\
-  !*** ./src/components/VDatePicker/VDatePicker.js ***!
+  !*** ./src/components/VDatePicker/VDatePicker.ts ***!
   \***************************************************/
 
 /*! ./VDatePickerTitle */
@@ -444,23 +532,23 @@
 /*! ./util/isDateAllowed */
 
 /*!************************************************************!*\
-  !*** ./src/components/VDatePicker/VDatePickerDateTable.js ***!
+  !*** ./src/components/VDatePicker/VDatePickerDateTable.ts ***!
   \************************************************************/
 
 /*! ./mixins/date-picker-table */
 
 /*!*********************************************************!*\
-  !*** ./src/components/VDatePicker/VDatePickerHeader.js ***!
+  !*** ./src/components/VDatePicker/VDatePickerHeader.ts ***!
   \*********************************************************/
 
 /*! ../../stylus/components/_date-picker-header.styl */
 
 /*!*************************************************************!*\
-  !*** ./src/components/VDatePicker/VDatePickerMonthTable.js ***!
+  !*** ./src/components/VDatePicker/VDatePickerMonthTable.ts ***!
   \*************************************************************/
 
 /*!********************************************************!*\
-  !*** ./src/components/VDatePicker/VDatePickerTitle.js ***!
+  !*** ./src/components/VDatePicker/VDatePickerTitle.ts ***!
   \********************************************************/
 
 /*! ../../stylus/components/_date-picker-title.styl */
@@ -468,7 +556,7 @@
 /*! ../../mixins/picker-button */
 
 /*!********************************************************!*\
-  !*** ./src/components/VDatePicker/VDatePickerYears.js ***!
+  !*** ./src/components/VDatePicker/VDatePickerYears.ts ***!
   \********************************************************/
 
 /*! ../../stylus/components/_date-picker-years.styl */
@@ -482,23 +570,23 @@
 /*! ./VDatePicker */
 
 /*!****************************************************************!*\
-  !*** ./src/components/VDatePicker/mixins/date-picker-table.js ***!
+  !*** ./src/components/VDatePicker/mixins/date-picker-table.ts ***!
   \****************************************************************/
 
 /*! ../../../stylus/components/_date-picker-table.styl */
 
 /*! ../../../directives/touch */
 
-/*! .././util/isDateAllowed */
+/*! ../util/isDateAllowed */
 
 /*!************************************************************************!*\
-  !*** ./src/components/VDatePicker/util/createNativeLocaleFormatter.js ***!
+  !*** ./src/components/VDatePicker/util/createNativeLocaleFormatter.ts ***!
   \************************************************************************/
 
 /*! ./pad */
 
 /*!**************************************************!*\
-  !*** ./src/components/VDatePicker/util/index.js ***!
+  !*** ./src/components/VDatePicker/util/index.ts ***!
   \**************************************************/
 
 /*! exports provided: createNativeLocaleFormatter, monthChange, pad */
@@ -508,15 +596,15 @@
 /*! ./monthChange */
 
 /*!**********************************************************!*\
-  !*** ./src/components/VDatePicker/util/isDateAllowed.js ***!
+  !*** ./src/components/VDatePicker/util/isDateAllowed.ts ***!
   \**********************************************************/
 
 /*!********************************************************!*\
-  !*** ./src/components/VDatePicker/util/monthChange.js ***!
+  !*** ./src/components/VDatePicker/util/monthChange.ts ***!
   \********************************************************/
 
 /*!************************************************!*\
-  !*** ./src/components/VDatePicker/util/pad.js ***!
+  !*** ./src/components/VDatePicker/util/pad.ts ***!
   \************************************************/
 
 /*!*******************************************!*\
@@ -704,7 +792,7 @@
 /*! ./VImg */
 
 /*!*****************************************!*\
-  !*** ./src/components/VInput/VInput.js ***!
+  !*** ./src/components/VInput/VInput.ts ***!
   \*****************************************/
 
 /*! ../../stylus/components/_inputs.styl */
@@ -716,7 +804,7 @@
 /*! ../../mixins/validatable */
 
 /*!****************************************!*\
-  !*** ./src/components/VInput/index.js ***!
+  !*** ./src/components/VInput/index.ts ***!
   \****************************************/
 
 /*! exports provided: VInput, default */
@@ -762,13 +850,13 @@
 /*! ./VJumbotron */
 
 /*!*****************************************!*\
-  !*** ./src/components/VLabel/VLabel.js ***!
+  !*** ./src/components/VLabel/VLabel.ts ***!
   \*****************************************/
 
 /*! ../../stylus/components/_labels.styl */
 
 /*!****************************************!*\
-  !*** ./src/components/VLabel/index.js ***!
+  !*** ./src/components/VLabel/index.ts ***!
   \****************************************/
 
 /*! exports provided: VLabel, default */
@@ -776,35 +864,33 @@
 /*! ./VLabel */
 
 /*!***************************************!*\
-  !*** ./src/components/VList/VList.js ***!
+  !*** ./src/components/VList/VList.ts ***!
   \***************************************/
 
 /*! ../../stylus/components/_lists.styl */
 
 /*!********************************************!*\
-  !*** ./src/components/VList/VListGroup.js ***!
+  !*** ./src/components/VList/VListGroup.ts ***!
   \********************************************/
 
-/*! ../../components/VIcon */
-
 /*!*******************************************!*\
-  !*** ./src/components/VList/VListTile.js ***!
+  !*** ./src/components/VList/VListTile.ts ***!
   \*******************************************/
 
 /*! ../../directives/ripple */
 
 /*!*************************************************!*\
-  !*** ./src/components/VList/VListTileAction.js ***!
+  !*** ./src/components/VList/VListTileAction.ts ***!
   \*************************************************/
 
 /*!*************************************************!*\
-  !*** ./src/components/VList/VListTileAvatar.js ***!
+  !*** ./src/components/VList/VListTileAvatar.ts ***!
   \*************************************************/
 
 /*! ../VAvatar */
 
 /*!***************************************!*\
-  !*** ./src/components/VList/index.js ***!
+  !*** ./src/components/VList/index.ts ***!
   \***************************************/
 
 /*! exports provided: VList, VListGroup, VListTile, VListTileAction, VListTileAvatar, VListTileActionText, VListTileContent, VListTileTitle, VListTileSubTitle, default */
@@ -855,20 +941,18 @@
   !*** ./src/components/VMenu/mixins/menu-keyable.js ***!
   \*****************************************************/
 
-/*! ../../../util/helpers */
-
 /*!******************************************************!*\
   !*** ./src/components/VMenu/mixins/menu-position.js ***!
   \******************************************************/
 
 /*!***********************************************!*\
-  !*** ./src/components/VMessages/VMessages.js ***!
+  !*** ./src/components/VMessages/VMessages.ts ***!
   \***********************************************/
 
 /*! ../../stylus/components/_messages.styl */
 
 /*!*******************************************!*\
-  !*** ./src/components/VMessages/index.js ***!
+  !*** ./src/components/VMessages/index.ts ***!
   \*******************************************/
 
 /*! exports provided: VMessages, default */
@@ -876,7 +960,7 @@
 /*! ./VMessages */
 
 /*!***************************************************************!*\
-  !*** ./src/components/VNavigationDrawer/VNavigationDrawer.js ***!
+  !*** ./src/components/VNavigationDrawer/VNavigationDrawer.ts ***!
   \***************************************************************/
 
 /*! ../../stylus/components/_navigation-drawer.styl */
@@ -884,7 +968,7 @@
 /*! ../../directives/touch */
 
 /*!***************************************************!*\
-  !*** ./src/components/VNavigationDrawer/index.js ***!
+  !*** ./src/components/VNavigationDrawer/index.ts ***!
   \***************************************************/
 
 /*! exports provided: VNavigationDrawer, default */
@@ -938,13 +1022,13 @@
 /*! ./VParallax */
 
 /*!*******************************************!*\
-  !*** ./src/components/VPicker/VPicker.js ***!
+  !*** ./src/components/VPicker/VPicker.ts ***!
   \*******************************************/
 
 /*! ../../stylus/components/_pickers.styl */
 
 /*!*****************************************!*\
-  !*** ./src/components/VPicker/index.js ***!
+  !*** ./src/components/VPicker/index.ts ***!
   \*****************************************/
 
 /*! exports provided: VPicker, default */
@@ -1041,6 +1125,8 @@
 
 /*! ../../stylus/components/_responsive.styl */
 
+/*! ../../mixins/measurable */
+
 /*!*********************************************!*\
   !*** ./src/components/VResponsive/index.ts ***!
   \*********************************************/
@@ -1093,6 +1179,22 @@
 
 /*! ../../util/dedupeModelListeners */
 
+/*!*****************************************!*\
+  !*** ./src/components/VSheet/VSheet.ts ***!
+  \*****************************************/
+
+/*! ../../stylus/components/_sheet.styl */
+
+/*! ../../mixins/elevatable */
+
+/*!****************************************!*\
+  !*** ./src/components/VSheet/index.ts ***!
+  \****************************************/
+
+/*! exports provided: VSheet, default */
+
+/*! ./VSheet */
+
 /*!*******************************************!*\
   !*** ./src/components/VSlider/VSlider.js ***!
   \*******************************************/
@@ -1124,6 +1226,42 @@
 /*! ./VSnackbar */
 
 /*!*************************************************!*\
+  !*** ./src/components/VSparkline/VSparkline.ts ***!
+  \*************************************************/
+
+/*! ./helpers/core */
+
+/*! ./helpers/path */
+
+/*!***************************************************!*\
+  !*** ./src/components/VSparkline/helpers/core.ts ***!
+  \***************************************************/
+
+/*! exports provided: genPoints */
+
+/*!***************************************************!*\
+  !*** ./src/components/VSparkline/helpers/math.ts ***!
+  \***************************************************/
+
+/*! exports provided: checkCollinear, getDistance, moveTo */
+
+/*!***************************************************!*\
+  !*** ./src/components/VSparkline/helpers/path.ts ***!
+  \***************************************************/
+
+/*! exports provided: genPath */
+
+/*! ./math */
+
+/*!********************************************!*\
+  !*** ./src/components/VSparkline/index.ts ***!
+  \********************************************/
+
+/*! exports provided: VSparkline, default */
+
+/*! ./VSparkline */
+
+/*!*************************************************!*\
   !*** ./src/components/VSpeedDial/VSpeedDial.js ***!
   \*************************************************/
 
@@ -1138,21 +1276,21 @@
 /*! ./VSpeedDial */
 
 /*!*********************************************!*\
-  !*** ./src/components/VStepper/VStepper.js ***!
+  !*** ./src/components/VStepper/VStepper.ts ***!
   \*********************************************/
 
 /*! ../../stylus/components/_steppers.styl */
 
 /*!****************************************************!*\
-  !*** ./src/components/VStepper/VStepperContent.js ***!
+  !*** ./src/components/VStepper/VStepperContent.ts ***!
   \****************************************************/
 
 /*!*************************************************!*\
-  !*** ./src/components/VStepper/VStepperStep.js ***!
+  !*** ./src/components/VStepper/VStepperStep.ts ***!
   \*************************************************/
 
 /*!******************************************!*\
-  !*** ./src/components/VStepper/index.js ***!
+  !*** ./src/components/VStepper/index.ts ***!
   \******************************************/
 
 /*! exports provided: VStepper, VStepperContent, VStepperStep, VStepperHeader, VStepperItems, default */
@@ -1164,13 +1302,13 @@
 /*! ./VStepperContent */
 
 /*!*************************************************!*\
-  !*** ./src/components/VSubheader/VSubheader.js ***!
+  !*** ./src/components/VSubheader/VSubheader.ts ***!
   \*************************************************/
 
 /*! ../../stylus/components/_subheaders.styl */
 
 /*!********************************************!*\
-  !*** ./src/components/VSubheader/index.js ***!
+  !*** ./src/components/VSubheader/index.ts ***!
   \********************************************/
 
 /*! exports provided: VSubheader, default */
@@ -1194,13 +1332,13 @@
 /*! ./VSwitch */
 
 /*!*************************************************!*\
-  !*** ./src/components/VSystemBar/VSystemBar.js ***!
+  !*** ./src/components/VSystemBar/VSystemBar.ts ***!
   \*************************************************/
 
 /*! ../../stylus/components/_system-bars.styl */
 
 /*!********************************************!*\
-  !*** ./src/components/VSystemBar/index.js ***!
+  !*** ./src/components/VSystemBar/index.ts ***!
   \********************************************/
 
 /*! exports provided: VSystemBar, default */
@@ -1314,8 +1452,10 @@
 /*! ./VTextarea */
 
 /*!***************************************************!*\
-  !*** ./src/components/VTimePicker/VTimePicker.js ***!
+  !*** ./src/components/VTimePicker/VTimePicker.ts ***!
   \***************************************************/
+
+/*! exports provided: selectingTimes, default */
 
 /*! ./VTimePickerTitle */
 
@@ -1324,26 +1464,26 @@
 /*! ../VDatePicker/util/pad */
 
 /*!********************************************************!*\
-  !*** ./src/components/VTimePicker/VTimePickerClock.js ***!
+  !*** ./src/components/VTimePicker/VTimePickerClock.ts ***!
   \********************************************************/
 
 /*! ../../stylus/components/_time-picker-clock.styl */
 
 /*!********************************************************!*\
-  !*** ./src/components/VTimePicker/VTimePickerTitle.js ***!
+  !*** ./src/components/VTimePicker/VTimePickerTitle.ts ***!
   \********************************************************/
 
 /*! ../../stylus/components/_time-picker-title.styl */
 
 /*! ../VDatePicker/util */
 
+/*! ./VTimePicker */
+
 /*!*********************************************!*\
-  !*** ./src/components/VTimePicker/index.js ***!
+  !*** ./src/components/VTimePicker/index.ts ***!
   \*********************************************/
 
 /*! exports provided: VTimePicker, VTimePickerClock, VTimePickerTitle, default */
-
-/*! ./VTimePicker */
 
 /*!***********************************************!*\
   !*** ./src/components/VTimeline/VTimeline.ts ***!
@@ -1366,7 +1506,7 @@
 /*! ./VTimelineItem */
 
 /*!*********************************************!*\
-  !*** ./src/components/VToolbar/VToolbar.js ***!
+  !*** ./src/components/VToolbar/VToolbar.ts ***!
   \*********************************************/
 
 /*! ../../stylus/components/_toolbar.styl */
@@ -1374,13 +1514,11 @@
 /*! ../../directives/scroll */
 
 /*!*****************************************************!*\
-  !*** ./src/components/VToolbar/VToolbarSideIcon.js ***!
+  !*** ./src/components/VToolbar/VToolbarSideIcon.ts ***!
   \*****************************************************/
 
-/*! ../../components/VBtn */
-
 /*!******************************************!*\
-  !*** ./src/components/VToolbar/index.js ***!
+  !*** ./src/components/VToolbar/index.ts ***!
   \******************************************/
 
 /*! exports provided: VToolbar, VToolbarSideIcon, VToolbarTitle, VToolbarItems, default */
@@ -1413,6 +1551,8 @@
 
 /*! ./VTreeviewNode */
 
+/*! ./util/filterTreeItems */
+
 /*!***************************************************!*\
   !*** ./src/components/VTreeview/VTreeviewNode.ts ***!
   \***************************************************/
@@ -1426,6 +1566,12 @@
 /*! exports provided: VTreeview, VTreeviewNode, default */
 
 /*! ./VTreeview */
+
+/*!**********************************************************!*\
+  !*** ./src/components/VTreeview/util/filterTreeItems.ts ***!
+  \**********************************************************/
+
+/*! exports provided: filterTreeItem, filterTreeItems */
 
 /*!*******************************************!*\
   !*** ./src/components/VWindow/VWindow.ts ***!
@@ -1447,6 +1593,24 @@
 
 /*! ./VWindowItem */
 
+/*!********************************************************!*\
+  !*** ./src/components/Vuetify/goTo/easing-patterns.ts ***!
+  \********************************************************/
+
+/*! exports provided: linear, easeInQuad, easeOutQuad, easeInOutQuad, easeInCubic, easeOutCubic, easeInOutCubic, easeInQuart, easeOutQuart, easeInOutQuart, easeInQuint, easeOutQuint, easeInOutQuint */
+
+/*!**********************************************!*\
+  !*** ./src/components/Vuetify/goTo/index.ts ***!
+  \**********************************************/
+
+/*! ./easing-patterns */
+
+/*!*********************************************!*\
+  !*** ./src/components/Vuetify/goTo/util.ts ***!
+  \*********************************************/
+
+/*! exports provided: getOffset, getContainer */
+
 /*!*****************************************!*\
   !*** ./src/components/Vuetify/index.ts ***!
   \*****************************************/
@@ -1465,7 +1629,7 @@
 
 /*! ./mixins/lang */
 
-/*! ./util/goTo */
+/*! ./goTo */
 
 /*!******************************************************!*\
   !*** ./src/components/Vuetify/mixins/application.ts ***!
@@ -1476,8 +1640,10 @@
   \*****************************************************/
 
 /*!************************************************!*\
-  !*** ./src/components/Vuetify/mixins/icons.js ***!
+  !*** ./src/components/Vuetify/mixins/icons.ts ***!
   \************************************************/
+
+/*! exports provided: convertToComponentDeclarations, default */
 
 /*!***********************************************!*\
   !*** ./src/components/Vuetify/mixins/lang.ts ***!
@@ -1486,24 +1652,18 @@
 /*! ../../../locale/en */
 
 /*!**************************************************!*\
-  !*** ./src/components/Vuetify/mixins/options.js ***!
+  !*** ./src/components/Vuetify/mixins/options.ts ***!
   \**************************************************/
 
 /*!************************************************!*\
   !*** ./src/components/Vuetify/mixins/theme.ts ***!
   \************************************************/
 
-/*!*********************************************!*\
-  !*** ./src/components/Vuetify/util/goTo.js ***!
-  \*********************************************/
-
-/*! ../../../util/easing-patterns */
-
 /*!*********************************!*\
   !*** ./src/components/index.ts ***!
   \*********************************/
 
-/*! exports provided: VApp, VAlert, VAutocomplete, VAvatar, VBadge, VBottomNav, VBottomSheet, VBreadcrumbs, VBreadcrumbsItem, VBreadcrumbsDivider, VBtn, VBtnToggle, VCard, VCardMedia, VCardTitle, VCardActions, VCardText, VCarousel, VCarouselItem, VCheckbox, VChip, VCombobox, VCounter, VDataIterator, VDataTable, VEditDialog, VTableOverflow, VDatePicker, VDatePickerTitle, VDatePickerHeader, VDatePickerDateTable, VDatePickerMonthTable, VDatePickerYears, VDialog, VDivider, VExpansionPanel, VExpansionPanelContent, VFooter, VForm, VContainer, VContent, VFlex, VLayout, VSpacer, VHover, VIcon, VImg, VInput, VItem, VItemGroup, VJumbotron, VLabel, VList, VListGroup, VListTile, VListTileAction, VListTileAvatar, VListTileActionText, VListTileContent, VListTileTitle, VListTileSubTitle, VMenu, VMessages, VNavigationDrawer, VOverflowBtn, VPagination, VParallax, VPicker, VProgressCircular, VProgressLinear, VRadioGroup, VRadio, VRangeSlider, VRating, VResponsive, VSelect, VSlider, VSnackbar, VSpeedDial, VStepper, VStepperContent, VStepperStep, VStepperHeader, VStepperItems, VSubheader, VSwitch, VSystemBar, VTabs, VTab, VTabItem, VTabsItems, VTabsSlider, VTextarea, VTextField, VTimeline, VTimelineItem, VTimePicker, VTimePickerClock, VTimePickerTitle, VToolbar, VToolbarSideIcon, VToolbarTitle, VToolbarItems, VTooltip, VTreeview, VTreeviewNode, VWindow, VWindowItem, VBottomSheetTransition, VCarouselTransition, VCarouselReverseTransition, VTabTransition, VTabReverseTransition, VMenuTransition, VFabTransition, VDialogTransition, VDialogBottomTransition, VFadeTransition, VScaleTransition, VScrollXTransition, VScrollXReverseTransition, VScrollYTransition, VScrollYReverseTransition, VSlideXTransition, VSlideXReverseTransition, VSlideYTransition, VSlideYReverseTransition, VExpandTransition, VRowExpandTransition */
+/*! exports provided: VApp, VAlert, VAutocomplete, VAvatar, VBadge, VBottomNav, VBottomSheet, VBreadcrumbs, VBreadcrumbsItem, VBreadcrumbsDivider, VBtn, VBtnToggle, VCalendar, VCalendarDaily, VCalendarWeekly, VCalendarMonthly, VCard, VCardMedia, VCardTitle, VCardActions, VCardText, VCarousel, VCarouselItem, VCheckbox, VChip, VCombobox, VCounter, VDataIterator, VDataTable, VEditDialog, VTableOverflow, VDatePicker, VDatePickerTitle, VDatePickerHeader, VDatePickerDateTable, VDatePickerMonthTable, VDatePickerYears, VDialog, VDivider, VExpansionPanel, VExpansionPanelContent, VFooter, VForm, VContainer, VContent, VFlex, VLayout, VSpacer, VHover, VIcon, VImg, VInput, VItem, VItemGroup, VJumbotron, VLabel, VList, VListGroup, VListTile, VListTileAction, VListTileAvatar, VListTileActionText, VListTileContent, VListTileTitle, VListTileSubTitle, VMenu, VMessages, VNavigationDrawer, VOverflowBtn, VPagination, VSheet, VParallax, VPicker, VProgressCircular, VProgressLinear, VRadioGroup, VRadio, VRangeSlider, VRating, VResponsive, VSelect, VSlider, VSnackbar, VSparkline, VSpeedDial, VStepper, VStepperContent, VStepperStep, VStepperHeader, VStepperItems, VSubheader, VSwitch, VSystemBar, VTabs, VTab, VTabItem, VTabsItems, VTabsSlider, VTextarea, VTextField, VTimeline, VTimelineItem, VTimePicker, VTimePickerClock, VTimePickerTitle, VToolbar, VToolbarSideIcon, VToolbarTitle, VToolbarItems, VTooltip, VTreeview, VTreeviewNode, VWindow, VWindowItem, VBottomSheetTransition, VCarouselTransition, VCarouselReverseTransition, VTabTransition, VTabReverseTransition, VMenuTransition, VFabTransition, VDialogTransition, VDialogBottomTransition, VFadeTransition, VScaleTransition, VScrollXTransition, VScrollXReverseTransition, VScrollYTransition, VScrollYReverseTransition, VSlideXTransition, VSlideXReverseTransition, VSlideYTransition, VSlideYReverseTransition, VExpandTransition, VExpandXTransition, VRowExpandTransition */
 
 /*! ./VGrid */
 
@@ -1517,7 +1677,7 @@
   !*** ./src/components/transitions/index.js ***!
   \*********************************************/
 
-/*! exports provided: VBottomSheetTransition, VCarouselTransition, VCarouselReverseTransition, VTabTransition, VTabReverseTransition, VMenuTransition, VFabTransition, VDialogTransition, VDialogBottomTransition, VFadeTransition, VScaleTransition, VScrollXTransition, VScrollXReverseTransition, VScrollYTransition, VScrollYReverseTransition, VSlideXTransition, VSlideXReverseTransition, VSlideYTransition, VSlideYReverseTransition, VExpandTransition, VRowExpandTransition, default */
+/*! exports provided: VBottomSheetTransition, VCarouselTransition, VCarouselReverseTransition, VTabTransition, VTabReverseTransition, VMenuTransition, VFabTransition, VDialogTransition, VDialogBottomTransition, VFadeTransition, VScaleTransition, VScrollXTransition, VScrollXReverseTransition, VScrollYTransition, VScrollYReverseTransition, VSlideXTransition, VSlideXReverseTransition, VSlideYTransition, VSlideYReverseTransition, VExpandTransition, VExpandXTransition, VRowExpandTransition, default */
 
 /*! ./expand-transition */
 
@@ -1548,6 +1708,8 @@
 /*!**********************************!*\
   !*** ./src/directives/ripple.ts ***!
   \**********************************/
+
+/*! ../util/console */
 
 /*!**********************************!*\
   !*** ./src/directives/scroll.ts ***!
@@ -1617,8 +1779,6 @@
 
 /*! ./loadable */
 
-/*! ../util/console */
-
 /*!*********************************!*\
   !*** ./src/mixins/delayable.ts ***!
   \*********************************/
@@ -1632,6 +1792,10 @@
   \**********************************/
 
 /*! ./bootable */
+
+/*!**********************************!*\
+  !*** ./src/mixins/elevatable.ts ***!
+  \**********************************/
 
 /*!**********************************!*\
   !*** ./src/mixins/filterable.ts ***!
@@ -1668,22 +1832,22 @@
 /*! ./stackable */
 
 /*!***********************************!*\
-  !*** ./src/mixins/overlayable.js ***!
+  !*** ./src/mixins/overlayable.ts ***!
   \***********************************/
 
 /*! ../stylus/components/_overlay.styl */
 
 /*!*************************************!*\
-  !*** ./src/mixins/picker-button.js ***!
+  !*** ./src/mixins/picker-button.ts ***!
   \*************************************/
 
+/*! ./colorable */
+
 /*!******************************!*\
-  !*** ./src/mixins/picker.js ***!
+  !*** ./src/mixins/picker.ts ***!
   \******************************/
 
 /*! ../components/VPicker */
-
-/*! ./colorable */
 
 /*!************************************!*\
   !*** ./src/mixins/positionable.ts ***!
@@ -1732,7 +1896,7 @@
   \************************************/
 
 /*!*********************************!*\
-  !*** ./src/mixins/stackable.js ***!
+  !*** ./src/mixins/stackable.ts ***!
   \*********************************/
 
 /*!*********************************!*\
@@ -1754,7 +1918,7 @@
   \************************************/
 
 /*!***********************************!*\
-  !*** ./src/mixins/validatable.js ***!
+  !*** ./src/mixins/validatable.ts ***!
   \***********************************/
 
 /*!*****************************!*\
@@ -1802,6 +1966,14 @@
 /*!*********************************************!*\
   !*** ./src/stylus/components/_buttons.styl ***!
   \*********************************************/
+
+/*!****************************************************!*\
+  !*** ./src/stylus/components/_calendar-daily.styl ***!
+  \****************************************************/
+
+/*!*****************************************************!*\
+  !*** ./src/stylus/components/_calendar-weekly.styl ***!
+  \*****************************************************/
 
 /*!*******************************************!*\
   !*** ./src/stylus/components/_cards.styl ***!
@@ -1967,6 +2139,10 @@
   !*** ./src/stylus/components/_selection-controls.styl ***!
   \********************************************************/
 
+/*!*******************************************!*\
+  !*** ./src/stylus/components/_sheet.styl ***!
+  \*******************************************/
+
 /*!*********************************************!*\
   !*** ./src/stylus/components/_sliders.styl ***!
   \*********************************************/
@@ -2079,20 +2255,14 @@
   !*** ./src/util/dedupeModelListeners.ts ***!
   \******************************************/
 
-/*!*************************************!*\
-  !*** ./src/util/easing-patterns.js ***!
-  \*************************************/
-
-/*! exports provided: linear, easeInQuad, easeOutQuad, easeInOutQuad, easeInCubic, easeOutCubic, easeInOutCubic, easeInQuart, easeOutQuart, easeInOutQuart, easeInQuint, easeOutQuint, easeInOutQuint */
-
 /*!*****************************!*\
   !*** ./src/util/helpers.ts ***!
   \*****************************/
 
-/*! exports provided: createSimpleFunctional, createSimpleTransition, createJavaScriptTransition, directiveConfig, addOnceEventListener, getNestedValue, deepEqual, getObjectValueByPath, getPropertyFromItem, createRange, getZIndex, escapeHTML, filterObjectOnKeys, filterChildren, convertToUnit, kebabCase, isObject, keyCodes, remapInternalIcon, keys, camelize */
+/*! exports provided: createSimpleFunctional, createSimpleTransition, createJavaScriptTransition, directiveConfig, addOnceEventListener, getNestedValue, deepEqual, getObjectValueByPath, getPropertyFromItem, createRange, getZIndex, escapeHTML, filterObjectOnKeys, filterChildren, convertToUnit, kebabCase, isObject, keyCodes, remapInternalIcon, keys, camelize, arrayDiff, upperFirst, getSlotType */
 
 /*!**************************!*\
-  !*** ./src/util/mask.js ***!
+  !*** ./src/util/mask.ts ***!
   \**************************/
 
 /*! exports provided: defaultDelimiters, isMaskDelimiter, maskText, unmaskText */
@@ -2102,7 +2272,7 @@
   \****************************/
 
 /*!********************************************!*\
-  !*** ./src/util/rebuildFunctionalSlots.js ***!
+  !*** ./src/util/rebuildFunctionalSlots.ts ***!
   \********************************************/
 
 /*!***************************!*\
